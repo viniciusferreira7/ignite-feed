@@ -10,8 +10,8 @@ export function Sidebar() {
       <div className={styles.profile}>
         <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/83302144?v=4" alt="" />
 
-        <strong>Vinicius Aquino</strong>
-        <p>Front End Develop</p>
+        <strong>Vinicius De Aquino</strong>
+        <span>Front End Developer</span>
       </div>
       <footer>
         <a href="#">
