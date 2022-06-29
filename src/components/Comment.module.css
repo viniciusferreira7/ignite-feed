@@ -81,4 +81,5 @@
 
 .commentBox footer button span::before{
   content: "\2022";
+  margin: 0 0.2rem;
 }
