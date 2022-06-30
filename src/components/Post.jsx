@@ -38,8 +38,12 @@ export function Post({ author, publishedAt, content }) {
     setNewCommentText(event.target.value)
   }
 
-  function deleteComment (comment) {
-    console.log(comment);
+  function deleteComment (commentToDelete) {
+    const commentsWithoutDeleteOne = comments.filter(comment => {
+      return comment !== commentToDelete
+    })
+
+    setComments(commentsWithoutDeleteOne);
   }
 
   return (
@@ -82,6 +86,7 @@ export function Post({ author, publishedAt, content }) {
       {comments.map(comments => {
         return (
           <Comment 
+            avatarUrl={author.avatarUrl}
             key={comments} 
             content={comments} 
             onDeleteComment={deleteComment}
