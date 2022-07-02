@@ -10,7 +10,7 @@ export function Comment({ avatarUrl, content, onDeleteComment}) {
   const [ likeCount, setLikeCount ] = useState(0)
 
   function handleLikeComment () {
-    setLikeCount(like => like + 1)
+    setLikeCount(state => state + 1)
   }
 
   function handleDeleteComment ()  {
